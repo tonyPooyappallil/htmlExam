@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<title>College</title>
+<style>
+
+#scholarshipMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
+    background-color: rgb(247, 239, 247);
+
+}
+#scholarshipMain > div{
+    width: 28%;
+    height: 100PX;
+    margin: 10PX;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    color: white;
+}
+#scho1{
+background-color: rgb(226, 223, 11)
+}
+#scho2{
+background-color: royalblue;
+}
+#scho3{
+background-color: rgb(23, 187, 228)
+}
+.img{ 
+    border-radius: 50%;
+    width: 100%;    
+}
+.imgholder{
+margin-top: 10px;
+     margin-left: 2%;
+     margin-right: 2%;
+      width: 20%;
+      height: 80px;     
+}
+#lowerhalf{
+    width: 90%;
+    margin:auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template:"a a a"
+    "b c d"; 
+}
+
+
+
+#box1{
+grid-area:a;
+margin-bottom: 20px;
+}
+#box2{
+grid-area:b;
+background-color: rgb(247, 239, 247);
+}
+#box3{
+grid-area:c;
+
+background-color: rgb(247, 239, 247);
+}
+#box4{
+grid-area:d;
+
+background-color: rgb(247, 239, 247);
+}
+#headprogr{
+    width: 80%;
+    text-align: center;
+    margin:auto
+}
+.programs{
+ 
+
+
+ font-size: 20px;
+     text-align: center;
+    background-color: rgb(247, 239, 247);
+   
+    
+}
+#listprogr{
+    border-radius: 5px;
+      margin-top: 10px;  
+   display: flex; 
+   flex-direction: row;
+   height: 30px;
+   margin-top: 30px;
+   justify-content: center;
+}
+#fst{
+    background-color: rgb(23, 187, 228) ;
+}
+.img2{
+    border-radius: 10px;
+}
+.BUTTON{
+    width: 70%;
+    height: 35px;
+    color: rgb(23, 187, 228) ; 
+    border:solid rgb(23, 187, 228) ; 
+    margin-bottom: 20px;
+    border-radius: 6px;}
+    .txtholdr{
+        margin-left: 8%;
+
+    }
+    .BUTTON:hover{
+        background-color: rgb(211, 86, 86);
+    }
+    .programs>span{
+       padding:  10px;
+           
+    }
+@media(min-width:480px){
+   #lowerhalf{
+    grid-template:"a "
+    "b"
+    "c"
+    "d"; 
+} 
+}
+@media(min-width:720px){
+   #lowerhalf{
+    grid-template:"a a"
+    "b c"
+     "d e"; 
+} 
+}
+@media(min-width:1020px){
+   #lowerhalf{
+    grid-template:"a a a"
+    "b c d"; 
+} 
+}
+
+
+
+</style>
+
+<body >
+    <div id="main"  >
+
+<div id="scholarshipMain" >
+<div id="scho1" class="scholarshipItems"  >
+
+
+
+    <div class="imgholder" >
+        <img class="img"  src="https://via.placeholder.com/150" alt="">
+    </div>
+    <div >
+        <h2>Scholarship</h2>
+        <p>Available</p>
+    </div>
+</div>
+<div  id="scho2" class="scholarshipItems"  >
+
+<div class="imgholder">
+    <img class="img" src="https://via.placeholder.com/150" alt="">
+</div>
+<div>
+    <h2>Scholarship</h2>
+    <p>Available</p>
+</div>
+
+</div>
+<div  id="scho3" class="scholarshipItems"  >
+
+<div class="imgholder">
+    <img class="img" src="https://via.placeholder.com/150" alt="">
+</div>
+
+
+<div>
+    <h2>Scholarship</h2>
+    <p>Available</p>
+</div>
+
+
+</div>
+</div>
+
+
+
+<div id="lowerhalf" >
+
+<div id="box1" >
+   <div >
+<h1 id="headprogr">Popular program</h1>
+</div>
+<div id="listprogr" >
+    <div id="fst" class="programs " > <span> Graduate </span>  </div>
+    <div class="programs "> <span> Postgraduate </span> </div>
+    <div class="programs "> <span> PHD Scholarships  </span> </div>
+    <div class="programs "> <span> Training </span> </div>
+</div>
+   
+
+</div>
+<div id="box2">
+
+<div>
+<img class="img2" width="100%" src="https://via.placeholder.com/150" alt=""/>
+    <div class="txtholdr" >
+        <span>Agriculture</span>
+        <h1>Chemical Engineering</h1>
+        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+            The
+            passage is it</p>
+        <button class="BUTTON">APPLY NOW</button>
+    
+    </div>
+
+</div>
+
+</div>
+<div id="box3"><div>
+    <img class="img2" width="100%" src="https://via.placeholder.com/150" alt="" />
+        <div class="txtholdr"  >
+            <span>Agriculture</span>
+            <h1>Mechanical Engineering</h1>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                The
+                passage is it</p>
+            <button class="BUTTON">APPLY NOW</button>
+        
+        </div>
+
+</div></div>
+<div id="box4"><div>
+    <img  class="img2" width="100%" src="https://via.placeholder.com/150" alt="" />
+    <div class="txtholdr"  >
+<span>Agriculture</span>
+<h1>Bio Engineering</h1>
+<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+    The
+    passage is it</p>
+<button class="BUTTON">APPLY NOW</button>
+
+    </div>
+  
+
+
+</div></div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
